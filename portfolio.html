@@ -5,45 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="./index.html" class="logo item-hover"
-          ><span>Web</span>Studio</a
+      <div class="box">
+        <nav class="nav">
+          <a href="./index.html" class="logo item-hover"
+            ><span>Web</span>Studio</a
+          >
+          <ul class="menu-list">
+            <li class="menu-holder">
+              <a class="menu-link item-hover" href="./index.html"> Студия</a>
+            </li>
+            <li class="menu-holder">
+              <a class="menu-link item-hover" href="./portfolio.html"
+                ><span>Портфолио</span></a
+              >
+            </li>
+            <li class="menu-holder">
+              <a class="menu-link item-hover" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="nav-item item-hover" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
         >
-        <ul class="menu-list">
-          <li class="menu-holder">
-            <a class="menu-link item-hover" href="./index.html"> Студия</a>
-          </li>
-          <li class="menu-holder">
-            <a class="menu-link item-hover" href="./portfolio.html"
-              ><span>Портфолио</span></a
-            >
-          </li>
-          <li class="menu-holder">
-            <a class="menu-link item-hover" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="nav-item item-hover" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="nav-item item-hover" href="tel:+380961111111"
-        >+38 096 111 11 11</a
-      >
+        <a class="nav-item item-hover" href="tel:+380961111111"
+          >+38 096 111 11 11</a
+        >
+      </div>
     </header>
 
     <main class="portfolio-main">
       <div class="line"></div>
-      <section class="btn-portfolio">
+      <div class="box"><section class="btn-portfolio">
         <ul class="portfolio-btn-holder">
           <li class="portfolio-btn-item">
             <button class="portfolio-btn" type="button">Все</button>
@@ -60,11 +63,11 @@
           <li class="portfolio-btn-item">
             <button class="portfolio-btn" type="button">Маркетинг</button>
           </li>
-        </ul>
+        </ul></div>
       </section>
 
-      <section>
-        <ul class="portfolio-card-holder">
+      <section class="brr">
+        <div class="box"><ul class="portfolio-card-holder">
           <li class="portfolio-card-item">
             <img
               class="portfolio-card-img"
@@ -164,12 +167,13 @@
             <h2 class="portfolio-card-h">Growing Business</h2>
             <p class="portfolio-card-text">Приложение</p>
           </li>
-        </ul>
+        </ul></div>
+        
       </section>
     </main>
 
     <footer class="footer">
-      <a class="logo-ftr" href="./index.html"><span>Web</span>Studio</a>
+      <div class="box"><a class="logo-ftr item-hover" href="./index.html"><span>Web</span>Studio</a>
       <address>
         <p class="contact-ftr">г. Киев, пр-т Леси Украинки, 26</p>
         <a class="link-ftr item-hover" href="mailto:info@example.com"
@@ -178,7 +182,8 @@
         <a class="link-ftr item-hover" href="tel:+380991111111"
           >+38 099 111 11 11</a
         >
-      </address>
+      </address></div>
+      
     </footer>
   </body>
 </html>

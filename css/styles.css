@@ -1,19 +1,25 @@
-/* * {
-  padding: 0 auto;
-  margin: 0 auto;
-} */
+:root {
+  --first-title-color: #ffffff;
+  --second-title-color: #212121;
+  --first-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: #ffffff;
+  --accent-color: #2196f3;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #212121;
-  width: 1600px;
 }
-
-.header {
+ul {
   list-style: none;
 }
+li {
+  padding: 0;
+}
+
 .nav {
   display: inline-block;
 }
@@ -24,22 +30,19 @@ body {
   font-weight: 700;
   line-height: 1.29;
   text-decoration: none;
-  color: #212121;
+  color: var(--second-title-color);
   margin-left: 215px;
   display: inline-block;
 }
 span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .menu-list {
-  list-style: none;
   display: inline-block;
-  padding: 0;
   margin: 32px 231px 32px 93px;
 }
 .menu-holder {
   display: inline-block;
-  padding: 0;
   margin-right: 50px;
 }
 .menu-link {
@@ -52,7 +55,7 @@ span {
 }
 .item-hover:hover,
 .item-hover:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .nav-item {
@@ -60,16 +63,23 @@ span {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-text-color);
   text-decoration: none;
   margin-left: 50px;
   display: inline-block;
 }
+.box {
+  width: 1600px;
+  margin: 0 auto;
+}
+
 .service {
   background: #2f303a;
   height: 600px;
-  color: #ffffff;
+  color: var(--first-title-color);
   margin-bottom: 94px;
+  display: flex;
+  align-items: center;
 }
 .service-text {
   box-sizing: border-box;
@@ -78,33 +88,31 @@ span {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 200px 452px 0;
-  margin: 0;
+  width: 696px;
   text-align: center;
+  margin: 0 auto;
 }
 .service-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  background: #2196f3;
+  letter-spacing: 0.06em;
+  color: var(--third-text-color);
+  background: var(--accent-color);
   cursor: pointer;
   padding: 10px 32px;
-  margin: 30px 700px 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 30px 0 0 700px;
 }
 .unique {
   margin-bottom: 94px;
 }
 .unique-list {
-  padding: 0;
   text-align: center;
 }
 .unique-item {
   width: 270px;
-  list-style: none;
   display: inline-block;
   margin-right: 30px;
   text-align: left;
@@ -120,7 +128,7 @@ span {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-text-color);
 }
 .about {
   margin-bottom: 94px;
@@ -134,7 +142,6 @@ span {
   margin-bottom: 50px;
 }
 .about-holder {
-  list-style: none;
   text-align: center;
 }
 .about-item {
@@ -155,14 +162,12 @@ span {
   margin: 0;
 }
 .team-list {
-  list-style: none;
   text-align: center;
   margin: 0px;
 }
 .team-item {
   display: inline-block;
   width: 270px;
-  /* height: 368px; */
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -190,7 +195,7 @@ span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.29;
-  color: #ffffff;
+  color: var(--third-text-color);
   text-decoration: none;
   margin-left: 215px;
 }
@@ -199,7 +204,7 @@ span {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--third-text-color);
   margin-left: 215px;
 }
 .link-ftr {
@@ -221,8 +226,6 @@ span {
   margin-bottom: 50px;
 }
 .portfolio-btn-holder {
-  list-style: none;
-  padding: 0;
   margin: 0;
   text-align: center;
 }
@@ -235,8 +238,7 @@ span {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #2196f3;
-  color: #ffffff;
+  background: #f5f4fa;
   cursor: pointer;
   padding: 6px 22px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -244,9 +246,18 @@ span {
   border-radius: 4px;
   border-color: inherit;
 }
+.portfolio-btn:hover {
+  color: var(--third-text-color);
+  background: var(--accent-color);
+}
+
+.brr {
+  width: 1270px;
+  margin: 0 auto;
+}
 .portfolio-card-holder {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 94px;
 }
