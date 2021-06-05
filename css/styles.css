@@ -6,7 +6,6 @@
   --third-text-color: #ffffff;
   --accent-color: #2196f3;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -15,15 +14,24 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 li {
   padding: 0;
 }
-
+.header {
+  display: flex;
+  border: 1px solid #ececec;
+}
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .nav {
   display: inline-block;
+  margin-right: 219px;
 }
-
 .logo {
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -31,15 +39,17 @@ li {
   line-height: 1.29;
   text-decoration: none;
   color: var(--second-title-color);
-  margin-left: 215px;
   display: inline-block;
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 span {
   color: var(--accent-color);
 }
 .menu-list {
   display: inline-block;
-  margin: 32px 231px 32px 93px;
+  margin: 0;
 }
 .menu-holder {
   display: inline-block;
@@ -68,16 +78,12 @@ span {
   margin-left: 50px;
   display: inline-block;
 }
-.box {
-  width: 1600px;
-  margin: 0 auto;
-}
 
 .service {
   background: #2f303a;
   height: 600px;
   color: var(--first-title-color);
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   display: flex;
   align-items: center;
 }
@@ -90,9 +96,12 @@ span {
   text-transform: uppercase;
   width: 696px;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 30px;
 }
 .service-btn {
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -103,17 +112,15 @@ span {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin: 30px 0 0 700px;
 }
 .unique {
-  margin-bottom: 94px;
+  padding: 94px 0;
 }
 .unique-list {
-  text-align: center;
+  display: flex;
 }
 .unique-item {
   width: 270px;
-  display: inline-block;
   margin-right: 30px;
   text-align: left;
 }
@@ -131,7 +138,7 @@ span {
   color: var(--second-text-color);
 }
 .about {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .about-text {
   font-weight: 700;
@@ -139,18 +146,19 @@ span {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
   margin-bottom: 50px;
 }
 .about-holder {
-  text-align: center;
+  display: flex;
+  margin-top: 0;
 }
 .about-item {
-  display: inline-block;
   margin-right: 30px;
 }
 .team {
   background: #f5f4fa;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .our-team {
   font-weight: 700;
@@ -158,12 +166,13 @@ span {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 94px 0 50px;
+  padding-bottom: 50px;
   margin: 0;
 }
 .team-list {
+  display: flex;
   text-align: center;
-  margin: 0px;
+  margin: 0;
 }
 .team-item {
   display: inline-block;
@@ -197,7 +206,6 @@ span {
   line-height: 1.29;
   color: var(--third-text-color);
   text-decoration: none;
-  margin-left: 215px;
 }
 .contact-ftr {
   font-style: normal;
@@ -205,7 +213,6 @@ span {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
-  margin-left: 215px;
 }
 .link-ftr {
   display: block;
@@ -216,18 +223,16 @@ span {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin: 9px 0 0 215px;
+  margin-top: 9px;
 }
-.line {
-  border: 1px solid #ececec;
-  margin-bottom: 94px;
-}
-.btn-portfolio {
-  margin-bottom: 50px;
+
+.portfolio {
+  padding: 94px 0;
 }
 .portfolio-btn-holder {
   margin: 0;
   text-align: center;
+  padding-bottom: 50px;
 }
 .portfolio-btn-item {
   display: inline-block;
@@ -251,35 +256,39 @@ span {
   background: var(--accent-color);
 }
 
-.brr {
-  width: 1270px;
-  margin: 0 auto;
-}
 .portfolio-card-holder {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 94px;
+  margin: 0px;
 }
 .portfolio-card-item {
+  max-width: 370px;
   display: inline-block;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin: 0 30px 30px 0;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
   text-align: left;
 }
-
-.portfolio-card-h {
+.portfolio-card-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.portfolio-text-holder {
+  padding: 20px 24px;
+}
+.portfolio-card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 0 4px 24px;
+  margin: 0 0 4px 0;
 }
 .portfolio-card-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 4px 0 20px 24px;
+  margin: 0;
 }
